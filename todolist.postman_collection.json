@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "dd032caf-6c8b-4429-bb42-1f8364b82618",
+		"name": "todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33192567"
+	},
+	"item": [
+		{
+			"name": "拿取todo列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-q7qs.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-q7qs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增todo内容",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"今天要刷牙\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolistapi-q7qs.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-q7qs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-q7qs.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-q7qs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆特定代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-q7qs.onrender.com/todos/5e3f2104-acda-41f7-b0b8-47e2dd9db88e",
+					"protocol": "https",
+					"host": [
+						"todolistapi-q7qs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"5e3f2104-acda-41f7-b0b8-47e2dd9db88e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
